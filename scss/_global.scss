@@ -1,0 +1,66 @@
+@import "vars";
+@import "fonts";
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6{
+    margin: 0;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+p{
+    margin: 0;
+}
+button{
+    padding: 0;
+    cursor: pointer;
+}
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $text;
+    position: relative;
+}
+
+.container{
+    // padding: 0 20px;
+}
+.title{
+//    @extend  %robotocondensed-400;
+font-family: 'Rubik', sans-serif;
+color: $text;
+font-weight: bold;
+font-size: 36px;
+line-height: 120%;
+
+}   
+@media(min-width: 576px){
+    .title{
+        font-size: 42px;
+        line-height: 120%;
+    }
+}
